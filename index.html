@@ -12,7 +12,7 @@
 		<script>
 			const url = window.location.href;
 			let paramString = url.split("?")[1];
-			const searchParams = new URLSearchParams(paramsString);
+			const searchParams = new URLSearchParams(paramString);
 			for (const p of searchParams) {
 				console.log(p);
 			}
