@@ -13,6 +13,9 @@
 			const url = window.location.href;
 			let paramString = url.split("?")[1];
 			const searchParams = new URLSearchParams(paramString);
+			console.log(searchParams.get("status"))
+			console.log(searchParams.get("message"))
+			console.log(searchParams.get("id"))
 			if (searchParams.get("status") === "paid") {
 				console.log("paid successfully");
 			}
