@@ -8,5 +8,14 @@
 	</head>
 	<body>
 		callback
+
+		<script>
+			const url = window.location.href;
+			let paramString = url.split("?")[1];
+			const searchParams = new URLSearchParams(paramsString);
+			for (const p of searchParams) {
+				console.log(p);
+			}
+		</script>
 	</body>
 </html>
