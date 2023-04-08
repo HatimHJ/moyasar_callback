@@ -13,9 +13,12 @@
 			const url = window.location.href;
 			let paramString = url.split("?")[1];
 			const searchParams = new URLSearchParams(paramString);
-			for (const p of searchParams) {
-				console.log(p);
+			if (searchParams.get("status") === "paid") {
+				console.log("paid successfully");
 			}
+			// for (const p of searchParams) {
+			// 	console.log(p);
+			// }
 		</script>
 	</body>
 </html>
